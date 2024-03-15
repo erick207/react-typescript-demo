@@ -1,9 +1,8 @@
+import { Name } from './Person.types'
+
 type PersonListProps = {
-  // Array of objects is specified as an object literal followed by square brackets
-  names: {
-    first: string
-    last: string
-  }[]
+  // Array of objects is specified as an object literal(or type) followed by square brackets
+  names: Name[]
 }
 
 export const PersonList = (props: PersonListProps) => {
